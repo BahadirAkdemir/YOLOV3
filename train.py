@@ -83,7 +83,7 @@ def main():
         train_fn(train_loader, model, optimizer, loss_fn, scaler, scaled_anchors)
         print(epoch)
 
-        if config.SAVE_MODEL and epoch > 0 and epoch % 10 == 0::
+        if config.SAVE_MODEL and epoch > 0 and epoch % 10 == 0:
             save_checkpoint(model, optimizer, filename=f"checkpoint.pth.tar")
 
         #print(f"Currently epoch {epoch}")
