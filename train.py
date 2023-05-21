@@ -81,8 +81,9 @@ def main():
     for epoch in range(config.NUM_EPOCHS):
         #plot_couple_examples(model, test_loader, 0.6, 0.5, scaled_anchors)
         train_fn(train_loader, model, optimizer, loss_fn, scaler, scaled_anchors)
+        print(epoch)
 
-        if config.SAVE_MODEL:
+        if config.SAVE_MODEL and if epoch > 0 and epoch % 10 == 0::
             save_checkpoint(model, optimizer, filename=f"checkpoint.pth.tar")
 
         #print(f"Currently epoch {epoch}")
