@@ -84,7 +84,7 @@ def main():
         print(epoch)
 
         if config.SAVE_MODEL and epoch > 0 and epoch % 10 == 0:
-            save_checkpoint(model, optimizer, filename=f"checkpoint_{epoch}.pth.tar")
+            save_checkpoint(model, optimizer, filename=f"checkpoint_{epoch+1}.pth.tar")
 
         #print(f"Currently epoch {epoch}")
         #print("On Train Eval loader:")
