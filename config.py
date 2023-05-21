@@ -22,7 +22,7 @@ S = [IMAGE_SIZE // 32, IMAGE_SIZE // 16, IMAGE_SIZE // 8]
 PIN_MEMORY = True
 LOAD_MODEL = True
 SAVE_MODEL = True
-CHECKPOINT_FILE = "checkpoint.pth_40.tar"
+CHECKPOINT_FILE = "checkpoint_40.pth.tar"
 IMG_DIR = DATASET + "/images/"
 LABEL_DIR = DATASET + "/labels/"
 
